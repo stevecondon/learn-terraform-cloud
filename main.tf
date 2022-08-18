@@ -23,15 +23,6 @@ resource "azurerm_resource_group" "rg" {
   }
 }
 
-resource "azurerm_resource_group" "rg2" {
-  name     = "myTFResourceGroup2"
-  location = "westeurope"
-  tags = {
-    Environment = "Terraform Getting Started"
-    Team = "DevOps"
-  }
-}
-
 # Create a virtual network
 resource "azurerm_virtual_network" "vnet" {
   name                = "myTFVnet"
